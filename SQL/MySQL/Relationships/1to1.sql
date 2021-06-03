@@ -4,7 +4,8 @@
 -- selecionando database:
     USE relationships;
 
--- criando tabela cliente: CREATE TABLE IF NOT EXISTS cliente(
+-- criando tabela cliente: 
+    CREATE TABLE IF NOT EXISTS cliente(
     id_cliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(20),
     sexo_cliente ENUM('M','F') NOT NULL,
