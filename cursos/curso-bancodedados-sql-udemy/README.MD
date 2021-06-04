@@ -58,6 +58,19 @@
 
 <h4> MODELAGEM FÍSICA - SCRIPTS DE BANCO </h4>
 
+EXEMPLO: 
+
+``` 
+CREATE TABLE CLIENTE (
+    NOME VARCHAR(30),
+    SEXO CHAR(1),
+    EMAIL VARCHAR(30),
+    CPF INT(11),
+    TELEFONE VARCHAR(30),
+    ENDERECO VARCHAR(100)
+);
+```
+
 <h4> Fonte: </h4>
 
 <li><a href="https://www.udemy.com/course/bancos-de-dados-relacionais-basico-avancado">Curso Banco de Dados e SQL - Udemy</a></li>
