@@ -1,0 +1,11 @@
+-- FILTRANDO VALORES NULOS 
+
+-- Filtrando por e-mail nulo: 
+SELECT NOME, SEXO, ENDERECO
+FROM CLIENTE
+WHERE EMAIL IS NULL;
+
+-- Filtrando clientes que não tem e-mail nulo: 
+SELECT NOME, SEXO, ENDERECO
+FROM CLIENTE
+WHERE EMAIL IS NOT NULL;
