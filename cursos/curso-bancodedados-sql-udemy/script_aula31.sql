@@ -1,0 +1,33 @@
+-- CLÁUSULA DELETE:
+
+-- Esta cláusula também deve sempre ser acompanhada do WHERE para que
+-- não haja exclusão de registros que não deveriam ser deletados
+
+SELECT * FROM CLIENTE WHERE NOME = 'ANA';
+
+-- É recomendado usar o SELECT para consultar e o COUNT para contar os registros antes de executar o DELETE
+
+SELECT COUNT(*) FROM CLIENTE; -- TOTAL 6
+
+SELECT COUNT(*) FROM CLIENTE -- TOTAL DELETADO 1
+WHERE NOME = 'ANA';
+
+DELETE FROM CLIENTE
+WHERE NOME = 'ANA';
+
+SELECT COUNT(*) FROM CLIENTE; -- RESTANTE 5
+
+SELECT * FROM CLIENTE;
+
+INSERT INTO CLIENTE VALUES('CARLA','F','C.LOPES@UOL.COM',45638854,'4575-0048',
+'RUA COPPER LEAF - WILLIAMSBURG - KITCHENER');
+
+SELECT * FROM CLIENTE
+WHERE NOME = 'CARLA'
+OR EMAIL = 'LILIAN@HOTMAIL.COM';
+
+DELETE FROM CLIENTE 
+WHERE NOME = 'CARLA'
+AND EMAIL = 'LILIAN@HOTMAIL.COM';
+
+SELECT * FROM CLIENTE;
