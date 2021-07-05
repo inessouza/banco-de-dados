@@ -6,3 +6,21 @@ Peter Chen vendo todo esse cenario afirmou: não podemos criar bancos de dados v
 
 Foram criadas as formas normais, que são diretrizes para aplicar em modelagem de ambientes oltp ou ambientes transacionais de bancos de dados. Hoje temos mais do que três formas normais, mas ao normalizarmos um banco até a sua terceira forma é o suficiente para ter um trabalho limpo e livre de erros. 
 Normalização é o processo de modelar o banco de dados projetando a forma como as informações serão armazenadas a fim de eliminar, ou pelo menos minimizar, a redundância no banco. Tal procedimento é feito a partir da identificação de uma anomalia em uma relação, decompondo-as em relações melhor estruturadas.</p>
+
+
+### Primeira Forma Normal (Aula 35)
+
+**Regras:** <br/>
+
+1ª - Todo campo vetorizado se tornará outra tabela. <br/>
+Exemplo: <br/>
+[Amarelo, Azul, Laranja, Verde] -> Vetor de Cores <br/>
+[KA, Fiesta, Uno, Civic] -> Vetor de carros <br/>
+
+2ª Todo campo multivalorado se tornará outra tabela quando o campo for divisivel. <br/>
+Exemplo: <br/>
+[Rua Dois, nº 5 - Bairro Sete - São Paulo - SP] -> Campo multivalorado, com mais de um elemento que não são da mesma família. <br/>
+
+3ª Toda tabela necessita de pelo menos um campo que identifique todo o registro como sendo único, isso é o que chamamos de primary key ou chave primária. <br/>
+Exemplo: <br/>
+[2568] -> ID - chave artificial, criada para identificação dos dados registrados em banco
