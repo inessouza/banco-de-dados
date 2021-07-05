@@ -38,5 +38,4 @@ Modelagem de ambientes oltp ou ambientes transacionais de bancos
 De dados.
 
 Hoje temos mais do que 3 formas normais, mas ao normalizarmos um
-Banco ate a sua terceira forma, é o suficiente para ter um
-Trabalho limpo e livre de erros.
+Banco ate a sua terceira forma, é o suficiente para ter um trabalho limpo e livre de erros. 
